@@ -1,0 +1,242 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+.navbar-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	transition: all 0.3s ease-out 0s;
+background-color: rgba($bg-black, 0.0);
+
+}
+
+.navbar {
+	padding: 0;
+	position: relative;
+	transition: all 0.3s ease-out 0s;
+	padding: 17px 0;
+
+
+	@media only screen  and (max-width: 991px) {
+		padding: 15px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 13px 0;
+	}
+
+	.navbar-brand {
+		padding: 0;
+    text-decoration: none;
+		img {
+			height: 50px;
+			transition: all 0.4s ease-in-out;
+			@media only screen and (max-width: 767px) {
+				height: 45px;
+			}
+		}
+	}
+
+	.navbar-nav {
+
+    /** Large devices (desktops, 992px and up) **/
+    @media (min-width: 992px) {
+      align-items: center;
+    }
+
+
+		.nav-item {
+			position: relative;
+			margin-left: 24px;
+			@media only screen and (max-width: 991px) {
+				margin-left: 26;
+			}
+      font-family: $font-libre;
+			a {
+				text-decoration: none;
+				font-size: 13px;
+				color: $title-color;
+				transition: all 0.3s ease-out 0s;
+				padding: 10px 0;
+				position: relative;
+				font-weight: 700;
+				text-transform: uppercase;
+				@media only screen and (max-width: 991px) {
+					color: #fff;
+				}
+				&:hover,
+				&.active {
+					color: $primary-color;
+				}
+
+				@media only screen and (max-width: 991px) {
+					display: inline-block;
+					margin: 4px 0px;
+					font-weight: 400;
+					padding: 6px 0;
+				}
+				@media only screen and (max-width: 767px) {
+					display: inline-block;
+					padding: 6px 0;
+				}
+
+        &.btn-nav{
+          background-color: $bg-white;
+          color: $title-color;
+          border-radius: 50px;
+          padding: 11px 14px;
+          padding-top: 13px;
+          transition: all .2s ease-in;
+          &:hover{
+            background-color: $primary-color;
+          }
+        }
+			}
+		}
+	}
+
+	.navbar-collapse {
+
+		@media only screen and (max-width: 991px) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: $bg-black;
+			z-index: 9;
+			box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1);
+			padding: 15px 12px 20px 12px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			background-color: $bg-black;
+			z-index: 9;
+			box-shadow: 0 15px 20px 0 rgba(43, 56, 109, 0.1);
+		}
+	}
+
+	.navbar-toggler {
+		padding: 0;
+
+		&:focus {
+			outline: none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		.toggler-icon {
+			width: 30px;
+			height: 2px;
+			background-color: $bg-white;
+			display: block;
+			margin: 5px 0;
+			position: relative;
+			-webkit-transition: all 0.3s ease-out 0s;
+			-o-transition: all 0.3s ease-out 0s;
+			transition: all 0.3s ease-out 0s;
+		}
+
+		&.active .toggler-icon {
+			&:nth-of-type(1) {
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+				top: 7px;
+			}
+
+			&:nth-of-type(2) {
+				opacity: 0;
+			}
+
+			&:nth-of-type(3) {
+				-webkit-transform: rotate(135deg);
+				-ms-transform: rotate(135deg);
+				transform: rotate(135deg);
+				top: -7px;
+			}
+		}
+	}
+}
+
+.sticky {
+	position: fixed;
+	z-index: 99;
+	background-color: $bg-black;
+	transition: all 0.3s ease-out 0s;
+
+   box-shadow: 0 0.1625rem 0.25rem 0 rgba($primary-color, 0.1);
+
+	.navbar {
+		padding: 12px 0;
+
+	 @media only screen and (max-width: 991px) {
+    padding: 12px 0px;
+   }
+
+		@media (max-width: 767px) {
+			padding: 10px 0;
+		}
+
+		.navbar-brand {
+			padding: 0;
+
+			img {
+				height: 50px;
+        @media only screen and (max-width: 767px) {
+         height: 45px;
+        }
+
+			}
+		}
+
+		.navbar-toggler .toggler-icon {
+			background: $bg-white;
+		}
+	}
+	.navbar-nav .nav-item {
+		a {
+			color: #fff;
+		}
+	}
+}
+
+.social {
+	@media only screen and (min-width: 992px) {
+		align-items: center;
+	}
+	@media only screen and (max-width: 991px) {
+		padding-top: 12px;
+	}
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0;
+		@media only screen and (max-width: 991px) {
+			margin-left: 26px;
+		}
+
+		a {
+			text-decoration: none;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0;
+			margin-right: 12px;
+			&:last-child {
+				margin-right: 0;
+			}
+			img {
+				height: 23px;
+			}
+
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+}
