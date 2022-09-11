@@ -170,7 +170,6 @@
 # counter-sec
 --------------------------------------------------------------*/
 .counter-sec{
-
   background-image: url('../img/resources/nail-2.jpg');
   background-position: center;
   background-size: cover;
@@ -225,4 +224,162 @@
       }
     }
   }
+}
+
+
+/*--------------------------------------------------------------
+# contact
+--------------------------------------------------------------*/
+
+.contact{
+  background-image: url('../img/resources/parallax-3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 130px 0px;
+  position: relative;
+  @media only screen and (max-width: 1199px) {
+   padding: 100px 0px;
+  }
+  @media only screen and (max-width: 991px) {
+   padding: 80px 0px;
+  }
+  @media only screen and (max-width: 767px) {
+   padding: 70px 0px;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($bg-black, 0.2);
+  }
+  .c-t{
+    position: relative;
+    text-align: center;
+    h2{
+
+      font-size: 44px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      @media only screen and (max-width: 1199px) {
+       font-size: 38px;
+       margin-bottom: 16px;
+      }
+      @media only screen and (max-width: 991px) {
+       font-size: 34px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 30px;
+       margin-bottom: 10px;
+      }
+    }
+    h5{
+      font-size: 21px;
+      color: #f7e560;
+      margin-bottom: 40px;
+      @media only screen and (max-width: 991px) {
+       font-size: 20px;
+       margin-bottom: 30px;
+      }
+    }
+  }
+
+  .con-single{
+    text-align: center;
+    position: relative;
+    background-color: rgba($bg-black, 0.2);
+    backdrop-filter: blur(2px);
+    height: 100%;
+    border-radius: 18px;
+    padding: 15px 15px;
+    @media only screen and (max-width: 991px) {
+     max-width: 300px;
+     margin-left: auto;
+     margin-right: auto;
+    }
+    i{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 21px;
+      background-color: #8c6147;
+      margin-bottom: 18px;
+    }
+    p{
+      color: #fff;
+      line-height: 1.4;
+      font-size: 15px;
+      a{
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+      }
+    }
+  }
+
+  .form-box{
+    position: relative;
+    background-color: #fff;
+    padding: 25px 25px;
+    border-radius: 18px;
+    @media only screen and (max-width: 767px) {
+     padding: 25px 20px;
+    }
+    .form-t{
+      text-align: center;
+      p{
+        font-size: 16px;
+        font-weight: 600;
+        color: $primary-color;
+        @media only screen and (max-width: 767px) {
+         font-size: 15px;
+        }
+      }
+      h3{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        @media only screen and (max-width: 767px) {
+         font-size: 21px;
+        }
+      }
+    }
+    .form-grp{
+      margin-bottom: 25px;
+    }
+    .form-control{
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-radius: 0;
+      box-shadow: none;
+      padding-top: 0px;
+      padding-left: 5px;
+    }
+  }
+.btn-submit{
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  background-color: $primary-color;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all .2s ease-in;
+  &:hover{
+    background-color: lighten($color: $primary-color, $amount: 10%);
+    color: #fff;
+  }
+}
 }
