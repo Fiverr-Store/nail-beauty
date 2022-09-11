@@ -877,23 +877,23 @@ h6 a {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 140px 0px;
+  padding: 160px 0px;
   margin-top: 50px;
   position: relative;
 }
 @media only screen and (max-width: 1199px) {
   .counter-sec {
-    padding: 120px 0px;
+    padding: 130px 0px;
   }
 }
 @media only screen and (max-width: 991px) {
   .counter-sec {
-    padding: 100px 0px;
+    padding: 120px 0px;
   }
 }
 @media only screen and (max-width: 767px) {
   .counter-sec {
-    padding: 70px 0px;
+    padding: 90px 0px;
   }
 }
 @media only screen and (max-width: 482px) {
@@ -913,7 +913,7 @@ h6 a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .counter-sec .c-single {
   text-align: center;
@@ -1079,6 +1079,7 @@ h6 a {
   font-size: 16px;
   font-weight: 600;
   color: #8c6147;
+  margin-bottom: 8px;
 }
 @media only screen and (max-width: 767px) {
   .contact .form-box .form-t p {
@@ -1088,11 +1089,12 @@ h6 a {
 .contact .form-box .form-t h3 {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 @media only screen and (max-width: 767px) {
   .contact .form-box .form-t h3 {
     font-size: 21px;
+    margin-bottom: 24px;
   }
 }
 .contact .form-box .form-grp {
