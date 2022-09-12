@@ -5,6 +5,10 @@
 	border-radius: 18px;
 	height: 100%;
 	object-fit: cover;
+  @media only screen and (max-width: 991px) {
+   height: auto;
+   object-fit: none;
+  }
 }
 .sec-t {
 	text-align: center;
