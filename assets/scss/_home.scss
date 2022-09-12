@@ -444,6 +444,11 @@
     margin-bottom: 14px;
     }
     font-size: 16px;
+    a{
+      color: $primary-color;
+      display: inline-block;
+      text-decoration: underline;
+    }
   }
   h2{
     font-size: 21px;

@@ -1205,6 +1205,11 @@ h6 a {
 .page-sec p:not(:last-child) {
   margin-bottom: 14px;
 }
+.page-sec p a {
+  color: #8c6147;
+  display: inline-block;
+  text-decoration: underline;
+}
 .page-sec h2 {
   font-size: 21px;
   margin-bottom: 10px;
