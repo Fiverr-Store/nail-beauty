@@ -1218,6 +1218,76 @@ h6 a {
 }
 
 /*--------------------------------------------------------------
+# images-sec
+--------------------------------------------------------------*/
+.images-sec {
+  background-color: #000000;
+  padding: 60px 0px;
+}
+@media only screen and (max-width: 767px) {
+  .images-sec {
+    padding: 40px 0px;
+  }
+}
+.images-sec .testimonial-item {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 40px 30px;
+  background: #fff;
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .images-sec .testimonial-item {
+    margin: 40px 20px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .images-sec .testimonial-item {
+    margin: 10px 5px;
+    margin-top: 0;
+  }
+}
+.images-sec .swiper-slide {
+  opacity: 0.3;
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.images-sec .swiper-scrollbar {
+  background: #8c6147;
+  height: 1px;
+  position: relative;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 482px) {
+  .images-sec .swiper-scrollbar {
+    margin-top: 20px;
+  }
+}
+.images-sec .swiper-scrollbar-drag {
+  height: 4px;
+  background: yellow;
+  border-radius: 0;
+  top: -2px;
+}
+
+@media (max-width: 1199px) {
+  .img-slider .swiper-slide-active {
+    opacity: 1;
+  }
+  .img-slider .swiper-pagination {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .img-slider .swiper-slide-next {
+    opacity: 1;
+    -webkit-transform: scale(1.14);
+            transform: scale(1.14);
+  }
+}
+/*--------------------------------------------------------------
 # main-footer
 --------------------------------------------------------------*/
 .main-footer {

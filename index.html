@@ -13,7 +13,8 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=193" />
+  <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=16" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -130,6 +131,122 @@
 
     </div><!-- /.container -->
   </section><!-- /.section-about -->
+
+  <section class="images-sec sec-padding">
+    <div class="container">
+      <div class="img-slider swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/1.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/2.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/3.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/4.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/5.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/6.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/7.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/8.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/9.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/10.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+          <div class="swiper-slide">
+
+            <div class="testimonial-item">
+              <img src="assets/img/salon/11.JPG" class="w-100" alt="events_pic_1">
+            </div>
+            <!--swiper-slide-->
+
+          </div><!-- End swiper-slide -->
+
+
+        </div>
+        <!--swiper wrapper-->
+
+        <div class="swiper-scrollbar"></div>
+
+      </div>
+      <!--img-slider-->
+    </div><!-- /.container -->
+  </section><!-- /.images-sec -->
+
 
 
   <section class="services bg-sec" id="services">
@@ -582,7 +699,52 @@
 
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+      /**
+   * Testimonials slider
+   */
+   new Swiper('.img-slider', {
+      speed: 1200,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 0
+        },
+
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 0
+        },
+
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        },
+
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        },
+
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        }
+      }
+    });
+  </script>
 
 
 </body>
